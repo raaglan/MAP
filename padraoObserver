@@ -1,0 +1,25 @@
+Para explicar como funciona o comportamento do padrao Observer,
+utilizarei um gerenciador de eventos chamado de Aggregator, para 
+ser o objeto que vai conter todas as informações que vao ser 
+repassadas para quem se registrar afim de receber notificações. 
+
+Um Aggregator funciona como a unica fonte dos eventos chegarem ate
+os objetos inscritos ou ligados a ele mesmo. 
+Funciona da seguinte forma, ele nao tem direção exata, manda
+para todos da mesma forma, mas para isso voce tem que se registrar
+com todos os objetos de origem no qual tem interesse de receber tais
+informações para ser repassadas. 
+
+Um Aggregator de Eventos também pode generalizar o evento, convertendo 
+eventos que são específicos de um objeto de origem em um evento mais 
+genérico. Dessa forma, os observadores dos agregadores não precisam 
+se registrar para tantos tipos de eventos individuais. Isso simplifica 
+o processo de registro para observadores, a custo de ser notificado de 
+eventos que podem não ter qualquer efeito material sobre o observador.
+
+Um bom uso do Aggregator é centralizar toda a lógica do registro para
+a classe Event Aggregator, Além de simplificar o registro, um Event Aggregator 
+também simplifica os problemas de gerenciamento de memória ao usar observadores.
+
+Podemos pensar em um Aggregator de Eventos como uma fachada que focaliza 
+apenas nas relações dos observadores.

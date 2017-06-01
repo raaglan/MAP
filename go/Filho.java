@@ -5,7 +5,7 @@ public class Filho implements Familia{
 	private Pai pai;
 	private String email; 
 	
-	public Filho (){
+	public Filho(){
 		pai = new Pai();
 	}
 	public String getNome() {

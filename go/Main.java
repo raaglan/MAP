@@ -4,8 +4,8 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		Pai pai = new Pai ();
-		pai.nome = "Jo„o";
+		Pai pai = new Pai();
+		pai.nome = "Jo√£o";
 		pai.idade = 50;
 		
 		Filho filho = new Filho();
